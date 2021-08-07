@@ -52,8 +52,8 @@ header
 
 .hero {
     text-align: center;
-    padding-top: 6rem;
-    max-width: 40rem;
+    padding-top: 5rem;
+    max-width: 35rem;
 }
 
 .hero__title {
@@ -139,10 +139,10 @@ attribution
 
 @media only screen and (min-width:780px) {
     .hero__title {
-        font-size: 2.66rem;
+        font-size: 2.1rem;
     }
     .hero__disc {
-        font-size: 1.13rem;
+        font-size: 1rem;
     }
 }
 
