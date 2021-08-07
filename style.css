@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+:root {
+    /*PRIMARY COLORS*/
+    --primary-Red: hsl(0, 78%, 62%);
+    --primary-Cyan: hsl(180, 62%, 55%);
+    --primary-Orange: hsl(34, 97%, 64%);
+    --primary-Blue: hsl(212, 86%, 64%);
+    /*NEUTRAL COLORS*/
+    --Very-Dark-Blue: hsl(234, 12%, 34%);
+    --Grayish-Blue: hsl(229, 6%, 66%);
+    --Very-Light-Gray: hsl(0, 0%, 98%);
+    /*FONT FAMILY */
+    --font-poppins: 'Poppins', sans-serif;
+    /*FONT WEIGHTS*/
+    --fw-light: 200;
+    --fw-regular: 400;
+    --fw-semi-bold: 600;
+}
+
+body,
+h1,
+h2,
+h3 {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--font-poppins);
+    color: var(--Grayish-Blue);
+    font-size: 15px;
+    background: var(--Very-Light-Gray);
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 80rem;
+    width: 85%;
+    margin: 0 auto;
+}
+
+
+/*-------------
+header
+--------------*/
+
+.hero {
+    text-align: center;
+    padding-top: 6rem;
+    max-width: 40rem;
+}
+
+.hero__title {
+    font-weight: var(--fw-light);
+    font-size: 1.6rem;
+    color: var(--Very-Dark-Blue);
+}
+
+.hero__title--bold {
+    font-weight: var(--fw-semi-bold);
+}
+
+.hero__disc {
+    margin-bottom: 5rem;
+}
+
+
+/*----------
+Cards
+-----------*/
+
+.card__container {
+    padding-bottom: 4.66rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.95rem;
+}
+
+.card {
+    background: white;
+    padding: 1.95rem;
+    border-radius: 0.46rem;
+    max-width: 23rem;
+    box-shadow: 0px 17px 30px -10px rgb(131 166 210 /60%);
+}
+
+.card__head {
+    color: var(--Very-Dark-Blue);
+    font-size: 1.4rem;
+}
+
+.card__disc {
+    font-size: 0.84rem;
+    margin-bottom: 2.66rem;
+    line-height: 1.75;
+}
+
+.card__img {
+    display: block;
+    margin-left: auto;
+}
+
+.card--cyan {
+    border-top: 4px solid var(--primary-Cyan);
+}
+
+.card--red {
+    border-top: 4px solid var(--primary-Red);
+}
+
+.card--orange {
+    border-top: 4px solid var(--primary-Orange);
+}
+
+.card--blue {
+    border-top: 4px solid var(--primary-Blue);
+}
+
+
+/*----------
+attribution
+----------*/
+
+.attribution {
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media only screen and (min-width:780px) {
+    .hero__title {
+        font-size: 2.66rem;
+    }
+    .hero__disc {
+        font-size: 1.13rem;
+    }
+}
+
+@media only screen and (min-width:1373px) {
+    .card--cyan,
+    .card--blue {
+        transform: translateY(9.73rem);
+    }
+    .card--blue {
+        order: 3;
+    }
+    .card--orange {
+        order: 4;
+    }
+}
